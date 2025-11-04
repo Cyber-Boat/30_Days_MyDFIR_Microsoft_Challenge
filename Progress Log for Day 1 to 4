@@ -4,11 +4,10 @@ Day 1 (Microsoft 365 E5 Trial Setup)
 •	Configured Billing Alerts
 screenshots
  
-•	Dashboard showing active M365 E5 license
+Dashboard showing active M365 E5 license
 
  
-•	Billing alert configuration page
-
+Billing alert configuration page
 
 Day 2 (Provisioning and securing a Windows Server VM)
 •	Created an Azure Windows Server VM.
@@ -17,37 +16,90 @@ Day 2 (Provisioning and securing a Windows Server VM)
 •	Successfully connected via RDP (using restricted NSG rule).
 Screenshots
  
-•	VM Overview and Inbound rules
+VM Overview and Inbound rules
 
  
-•	RDP client session from my workstation
+RDP client session from my workstation
 
 
 Day 3 (Create Log Analytics Workspace and Deploy Microsoft Sentinel)
-•	Created a Log Analytics Workspace in Azure to collect and analyze security event data.
-•	Deployed Microsoft Sentinel and connected it to the workspace for centralized security monitoring and investigation.
+Created a Log Analytics Workspace in Azure to collect and analyze security event data.
+Deployed Microsoft Sentinel and connected it to the workspace for centralized security monitoring and investigation.
 Screenshot
  
-•	Log Analytics Workspace creation and Sentinel deployment
+Log Analytics Workspace creation and Sentinel deployment
+
+
 
 Day 4 (Export Activity Logs and Explore KQL)
 •	Exported Azure Subscription Activity Logs to monitor administrative and resource-level actions within the environment.
 •	Loaded training data from the Microsoft Sentinel Training Lab solution to simulate security events.
 •	Began exploring KQL (Kusto Query Language) for querying logs, focusing on detecting failed logins and authentication activity
 
+Screenshots
+ 
+Exported activity logs
+
+ 
+Sentinel Training Lab deployment
+
+ 
+First KQL query and outputs.
 
 
 
-
+Day 5 (Create Microsoft Sentinel Dashboard)
+•	Created a custom Microsoft Sentinel dashboard to visualize key security metrics and insights from ingested data.
+•	Added widgets for failed logons, authentication trends, and alert summaries to enhance real-time visibility into security events.
+•	Customized layout and filters to support faster incident triage and analysis.
 
 Screenshots
  
-•	Exported activity logs
-
 
  
-•	Sentinel Training Lab deployment
+Sentinel dashboard and visualization panels
+
+
+
+Day 6 (Connect Microsoft Defender XDR and Create Analytic Rule)
+•	Connected Microsoft Defender XDR to Microsoft Sentinel to unify threat data and enhance detection capabilities across endpoints and cloud workloads.
+•	Created a custom analytic rule in Sentinel using sample log data to simulate and detect brute-force attack patterns.
+•	Tested the rule’s trigger logic and verified alert generation in the Sentinel incident’s view.
+Screenshots
+ 
+XDR connector setup
 
  
-•	First KQL query and outputs.
+Analytic rule creation
+
+ 
+Generated alert from the test log 
+
+
+
+
+Day 7 (KQL Analysis of Failed and Successful Logons)
+•	Used Kusto Query Language (KQL) to identify accounts experiencing the highest number of failed logons, indicating possible brute-force attempts. 
+•	Extended the investigation by querying for successful logins from the same accounts to determine potential compromise points and login sources. 
+•	Analyzed patterns and correlations between failed and successful authentication events to strengthen incident detection logic.
+Screenshots 
+KQL queries and result tables for failed and successful logons
+
+ 
+Key insights from the analysis
+
+
+
+Day 8 (Bookmark Notable KQL Results and Create an Incident)
+•	Ran a KQL query in Microsoft Sentinel to identify notable security events within the ingested log data.
+•	Bookmarked a significant result for deeper investigation and evidence tracking.
+•	Created an incident directly from the bookmarked event to simulate real-world SOC response workflows, linking analytical findings to actionable security cases.
+Screenshots
+ 
+Bookmarked event
+
+ 
+Newly created incident from Bookmark in Sentinel
+
+
 
